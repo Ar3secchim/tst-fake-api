@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap');
+
+body{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  background-color: #d6d4e2;
+  gap: 2.4rem;
+}
+
+.boxComment{
+  width: 72rem;
+  height: 12.8rem;
+  background-color: white;
+  border-radius: 3.2rem;
+
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+
+  padding: 2.4rem 5.6rem;
+}
+
+.text ul li:nth-child(1){
+  display: flex;
+  gap: 1rem;
+
+  font-family: 'Space Grotesk';
+  font-weight: 700;
+  font-size: 2.4rem;
+  line-height: 3.2rem;
+}
+
+.text ul li p{
+  font-family: 'Space Grotesk';
+  font-weight: 500;
+  font-size: 2rem;
+  line-height: 3.2rem;
+
+  color: #acaab4;
+}
+
+.text ul li:nth-child(2){
+  font-family: 'Space Grotesk';
+  font-weight: 400;
+  font-size: 2.4rem;
+  line-height: 3.2rem;
+  margin-top: 0.8rem;
+
+  color: #18161F;
+}
+
+.boxCommentBig{
+  width: 72rem;
+  height: 18.4rem;
+
+  background-color: white;
+  border-radius: 3.2rem 3.2rem 0rem 0rem;
+
+  display: flex;
+  gap: 4rem;
+
+  padding: 2.4rem 5.6rem;
+}
+
+.boxExtra{
+  width: 72rem;
+  height: 11.2rem;
+
+  background-color: white;
+  border-radius: 0rem 0rem 3.2rem 3.2rem;
+
+  padding: 2.4rem 5.6rem;
+
+  display: flex;
+  gap: 4rem;
+}
+.boxExtra{
+  font-family: 'Space Grotesk';
+  font-weight: 400;
+  font-size: 2.4rem;
+  line-height: 3.2rem;
+
+  color: #18161F;
+}
