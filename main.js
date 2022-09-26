@@ -25,11 +25,6 @@ function createComment (element){
 
   userId.innerText = `USER ${element.userId}`
 
-  // create imgUser
-  const imgUser = document.createElement("img")
-  imgUser.src = ""
-  userId.appendChild(imgUser)
-
   // create userName
   const containerUserComment = document.createElement("div")
   const userName = document.createElement("span")
@@ -40,27 +35,24 @@ function createComment (element){
 
   //create container comment
   containerUserComment.appendChild(userName)
-  containerUserComment.classList.add("containerUserComment")
 
   const containerComment = document.createElement("span")
   containerUserComment.appendChild(containerComment)
   containerComment.classList.add("container-comment")
 
   containerComment.innerText = element.body
-
-
 }
 
 // using dados
 async function main() {
-    const data = await getData()
-    const userName1 = await data.filter(data => data.userId === 1)
-
-    userName1.forEach(element => {
-      createComment(element)
-      console.log(element)
-
-    })
+  // exec function data
+  const data = await getData()
+  // filter data
+  const userName1 = await data.filter(data => data.userId === 2)
+  // exec element on the screen
+  userName1.forEach(element => {
+    createComment(element)
+    console.log(element)
+  })
 }
-
 main()
