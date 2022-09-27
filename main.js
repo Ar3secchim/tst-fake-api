@@ -52,7 +52,6 @@ async function main() {
   // exec element on the screen
   userName1.forEach(element => {
     createComment(element)
-    console.log(element)
   })
 }
 main()
